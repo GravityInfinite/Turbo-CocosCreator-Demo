@@ -10,11 +10,11 @@
   },
   "BuildTaskManager": {
     "taskMap": {
-      "1668592190340": {
-        "id": "1668592190340",
+      "1669092103758": {
+        "id": "1669092103758",
         "progress": 1,
         "state": "success",
-        "message": "11-16-2022 20:05 Build success in 89791 ms!",
+        "message": "2022-11-22 12:41 Build success in 10567 ms!",
         "options": {
           "name": "NewProject",
           "platform": "wechatgame",
@@ -54,7 +54,54 @@
             }
           }
         },
-        "time": "11-16-2022 20:03",
+        "time": "2022-11-22 12:41",
+        "dirty": false
+      },
+      "1669098389709": {
+        "id": "1669098389709",
+        "progress": 1,
+        "state": "success",
+        "message": "2022-11-22 14:26 Build success in 16418 ms!",
+        "options": {
+          "name": "NewProject",
+          "platform": "wechatgame",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "replaceSplashScreen": false,
+          "mainBundleCompressionType": "merge_dep",
+          "mainBundleIsRemote": false,
+          "mergeStartScene": false,
+          "experimentalEraseModules": false,
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "452f8187-b06f-489a-bd75-647f6303dde2",
+          "scenes": [
+            {
+              "url": "db://assets/scene.scene",
+              "uuid": "452f8187-b06f-489a-bd75-647f6303dde2",
+              "inBundle": false
+            }
+          ],
+          "outputName": "wechatgame-001",
+          "packages": {
+            "cocos-service": {
+              "configID": "8f797d",
+              "services": []
+            },
+            "wechatgame": {
+              "startSceneAssetBundle": false,
+              "orientation": "portrait",
+              "appid": "wx16e722502b86127d",
+              "separateEngine": false,
+              "wasm": "wasm",
+              "enabelWebGL2": "off"
+            }
+          }
+        },
+        "time": "2022-11-22 14:26",
         "dirty": false
       }
     }

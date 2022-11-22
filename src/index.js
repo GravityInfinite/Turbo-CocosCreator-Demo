@@ -8,6 +8,7 @@ import {
   isObject,
   xhrPromise,
   getMiniGamePlatform,
+  dateFormate,
 } from "./utils/tools";
 import { eventProperty } from "./lib/eventProperty";
 
@@ -94,11 +95,7 @@ turbo._store = {
       cc.sys.localStorage.setItem(turbo._para.storage_store_key, "1");
 
       turbo.profileSetOnce({
-        $first_visit_time: new Date()
-          .toLocaleString("cn", {
-            hour12: false,
-          })
-          .replaceAll("/", "-"),
+        $first_visit_time: dateFormate(new Date(), true),
       });
     }
   },
