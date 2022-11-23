@@ -4391,3 +4391,22 @@ at processTicksAndRejections (internal/process/task_queues.js:93:5)
 at async Object.buildProjectScriptsX (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\project-scripts.ccc:1:1957)  
 at async C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\index.ccc:1:863  
 at async BuildTask.handle (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\index.ccc:1:585)
+2022-11-23T11:28:03.576Z - log: [Package] menu@1.0.0 enable
+2022-11-23T11:28:03.579Z - log: [Package] profile@1.0.0 enable
+2022-11-23T11:28:03.596Z - log: [Package] project@1.0.2 enable
+2022-11-23T11:28:03.605Z - log: [Package] messages@1.0.0 enable
+2022-11-23T11:28:03.622Z - log: [Package] program@1.0.0 enable
+2022-11-23T11:28:03.628Z - log: [Package] tester@1.0.0 enable
+2022-11-23T11:28:03.634Z - log: [Package] preferences@1.0.0 enable
+2022-11-23T11:28:04.657Z - log: Setup mods mgr.: 611.614ms
+2022-11-23T11:28:04.665Z - log: Profile changed: engine (modules.includeModules: 2d,animation,audio,base,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,marionette,particle-2d,physics-2d-box2d,profiler,skeletal-animation,spine,tiled-map,tween,ui,video,webview)
+2022-11-23T11:28:04.673Z - verbose: [Engine] QuickCompile engine (974ms)
+2022-11-23T11:28:04.676Z - log: [Package] engine@1.0.6 enable
+2022-11-23T11:28:05.695Z - log: [Package] programming@1.0.0 enable
+2022-11-23T11:28:06.158Z - log: [Package] device@1.0.1 enable
+2022-11-23T11:28:06.189Z - log: [Package] ui-kit@1.0.1 enable
+2022-11-23T11:28:06.218Z - log: [Package] engine-extends@1.0.0 enable
+2022-11-23T11:28:06.283Z - log: [Package] asset-db@1.0.0 enable
+2022-11-23T11:28:06.329Z - log: [Package] scene@1.0.0 enable
+2022-11-23T11:28:06.520Z - log: [Package] server@1.0.0 enable
+2022-11-23T11:28:06.598Z - log: [Package] utils@1.0.0 enable
