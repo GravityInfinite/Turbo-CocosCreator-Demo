@@ -9,6 +9,7 @@ import {
   xhrPromise,
   getMiniGamePlatform,
   dateFormate,
+  setQuery,
 } from "./utils/tools";
 import { eventProperty } from "./lib/eventProperty";
 
@@ -127,7 +128,17 @@ function initWechatGameAppProxy() {
       if (!turbo._meta.life_state.app_launched) {
         if (turbo?._para?.autoTrack?.appLaunch) {
           const option = wx.getLaunchOptionsSync() || {};
-          turbo._autoTrackCustom.appLaunch(option);
+          // turbo._autoTrackCustom.appLaunch(option);
+          sendOnce({
+            type: "track",
+            event: "$MPLaunch",
+            properties: {
+              $is_first_time: turbo._is_first_launch,
+              $url_query: setQuery(option.query),
+              $scene: String(option.scene),
+            },
+            time: Date.now(),
+          });
         }
       }
       turbo._autoTrackCustom.appShow(para);
@@ -145,9 +156,19 @@ function checkAppLaunch() {
     const option = {};
     turbo._meta.life_state.app_launched = true;
     turbo._current_scene = option.scene;
-    turbo._autoTrackCustom.appLaunch({
-      query: option?.query || {},
-      scene: option.scene || "",
+    // turbo._autoTrackCustom.appLaunch({
+    //   query: option?.query || {},
+    //   scene: option.scene || "",
+    // });
+    sendOnce({
+      type: "track",
+      event: "$MPLaunch",
+      properties: {
+        $is_first_time: turbo._is_first_launch,
+        $url_query: setQuery(option?.query || {}),
+        $scene: String(option.scene || ""),
+      },
+      time: Date.now(),
     });
   }
 }
@@ -177,6 +198,26 @@ turbo.init = function (access_token = "", client_id = "") {
     initWechatGameAppProxy();
   }
 };
+
+function sendOnce(data) {
+  if (!turbo._globalData.client_id) {
+    return;
+  }
+  turbo._miniGamePlatform = getMiniGamePlatform();
+  const datas = turbo._store.mem.getMultList([data]) || [];
+  const url =
+    turbo._para.server_url + `?access_token=${turbo._globalData.access_token}`;
+  if (turbo._miniGamePlatform === "DEFAULT") {
+    xhrPromise(url, datas[0], "POST");
+    return;
+  }
+  turbo.platform_obj.request({
+    url,
+    method: "POST",
+    header,
+    data: datas[0],
+  });
+}
 
 const sendStrategy = {
   dataHasSend: true,
