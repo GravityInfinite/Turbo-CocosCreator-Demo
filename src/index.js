@@ -198,6 +198,7 @@ turbo.init = function (access_token = "", client_id = "") {
   turbo._store.init();
   sendStrategy.init();
   checkAppLaunch();
+  turbo._miniGamePlatform = getMiniGamePlatform();
   if (turbo._miniGamePlatform === "WECHAT_GAME") {
     initWechatGameAppProxy();
   }

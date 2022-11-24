@@ -10,14 +10,28 @@ export function isNumber(a) {
     : !1;
 }
 
-/**
- * @name getQuery
- * @return {object} url query
- */
+export function getMiniGamePlatform() {
+  var t = cc.sys.platform,
+    e = cc.sys.Platform.WECHAT_GAME,
+    a = 105,
+    r = cc.sys.Platform.BYTEDANCE_MINI_GAME;
+  return t === e
+    ? "WECHAT_GAME"
+    : t === a
+    ? "QQ_GAME"
+    : t === r
+    ? "BYTEDANCE_GAME"
+    : "DEFAULT";
+}
+
 export function getQuery() {
-  if (cc.sys.platform === cc.sys.Platform.WECHAT_GAME) {
+  const currentPlatform =
+    cc.sys?.WECHAT_GAME ||
+    (cc.sys?.Platform ? cc.sys.Platform?.WECHAT_GAME : "");
+  if (cc.sys.platform === currentPlatform) {
     return wx.getLaunchOptionsSync().query || {};
   }
+  return {};
 }
 
 export function getPlatForm() {
@@ -174,20 +188,6 @@ export function xhrPromise(url, data, method) {
     xhr.open(method, url, true);
     xhr.send(JSON.stringify(data));
   });
-}
-
-export function getMiniGamePlatform() {
-  var t = cc.sys.platform,
-    e = cc.sys.Platform.WECHAT_GAME,
-    a = 105,
-    r = cc.sys.Platform.BYTEDANCE_MINI_GAME;
-  return t === e
-    ? "WECHAT_GAME"
-    : t === a
-    ? "QQ_GAME"
-    : t === r
-    ? "BYTEDANCE_GAME"
-    : "DEFAULT";
 }
 
 export function dateFormate(dateTime, timeflag) {
