@@ -56,6 +56,53 @@
         },
         "time": "2022-11-23 19:30",
         "dirty": false
+      },
+      "1669259572657": {
+        "id": "1669259572657",
+        "progress": 1,
+        "state": "success",
+        "message": "2022-11-24 11:13 Build success in 13652 ms!",
+        "options": {
+          "name": "NewProject",
+          "platform": "wechatgame",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "replaceSplashScreen": false,
+          "mainBundleCompressionType": "merge_dep",
+          "mainBundleIsRemote": false,
+          "mergeStartScene": false,
+          "experimentalEraseModules": false,
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "452f8187-b06f-489a-bd75-647f6303dde2",
+          "scenes": [
+            {
+              "url": "db://assets/scene.scene",
+              "uuid": "452f8187-b06f-489a-bd75-647f6303dde2",
+              "inBundle": false
+            }
+          ],
+          "outputName": "wechatgame-001",
+          "packages": {
+            "cocos-service": {
+              "configID": "8f797d",
+              "services": []
+            },
+            "wechatgame": {
+              "startSceneAssetBundle": false,
+              "orientation": "portrait",
+              "appid": "wx16e722502b86127d",
+              "separateEngine": false,
+              "wasm": "wasm",
+              "enabelWebGL2": "off"
+            }
+          }
+        },
+        "time": "2022-11-24 11:12",
+        "dirty": false
       }
     }
   }

@@ -153,7 +153,11 @@ function initWechatGameAppProxy() {
 
 function checkAppLaunch() {
   if (!turbo._meta.life_state.app_launched) {
-    const option = {};
+    let option = {};
+    if (turbo._miniGamePlatform === "WECHAT_GAME") {
+      option = wx.getLaunchOptionsSync() || {};
+    }
+    turbo._miniGamePlatform = getMiniGamePlatform();
     turbo._meta.life_state.app_launched = true;
     turbo._current_scene = option.scene;
     // turbo._autoTrackCustom.appLaunch({
