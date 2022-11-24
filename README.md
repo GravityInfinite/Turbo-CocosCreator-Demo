@@ -1,4 +1,4 @@
-# CocosCreator3.x接入
+# CocosCreator接入
 
 本文档为CocosCreator接入 [turbo 引力引擎](https://gravity-engine.com/)的技术接入方案，具体 Demo 请参考[GitHub](https://github.com/GravityInfinite/Turbo-CocosCreator-Demo)。
 
