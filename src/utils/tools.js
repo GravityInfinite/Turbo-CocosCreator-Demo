@@ -12,7 +12,9 @@ export function isNumber(a) {
 
 export function getMiniGamePlatform() {
   var t = cc.sys.platform,
-    e = cc.sys.Platform.WECHAT_GAME,
+    e =
+      cc.sys?.WECHAT_GAME ||
+      (cc.sys?.Platform ? cc.sys.Platform?.WECHAT_GAME : ""),
     a = 105,
     r = cc.sys.Platform.BYTEDANCE_MINI_GAME;
   return t === e
