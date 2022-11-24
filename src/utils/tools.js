@@ -14,16 +14,8 @@ export function getMiniGamePlatform() {
   var t = cc.sys.platform,
     e =
       cc.sys?.WECHAT_GAME ||
-      (cc.sys?.Platform ? cc.sys.Platform?.WECHAT_GAME : ""),
-    a = 105,
-    r = cc.sys.Platform.BYTEDANCE_MINI_GAME;
-  return t === e
-    ? "WECHAT_GAME"
-    : t === a
-    ? "QQ_GAME"
-    : t === r
-    ? "BYTEDANCE_GAME"
-    : "DEFAULT";
+      (cc.sys?.Platform ? cc.sys.Platform?.WECHAT_GAME : "")
+  return t === e ? "WECHAT_GAME" : "DEFAULT";
 }
 
 export function getQuery() {

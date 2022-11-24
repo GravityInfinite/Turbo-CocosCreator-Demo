@@ -1,6 +1,6 @@
 {
   "name": "turbo-sdk-minigame",
-  "version": "3.2.6",
+  "version": "3.2.7",
   "description": "turbo minigame sdk",
   "main": "turbo.min.js",
   "scripts": {

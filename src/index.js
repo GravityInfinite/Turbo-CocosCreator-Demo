@@ -480,12 +480,6 @@ function onMounted() {
     case "WECHAT_GAME":
       turbo.platform_obj = wx;
       break;
-    case "QQ_GAME":
-      turbo.platform_obj = qq;
-      break;
-    case "BYTEDANCE_GAME":
-      turbo.platform_obj = tt;
-      break;
     default:
       turbo.platform_obj = {
         request: xhrPromise,
