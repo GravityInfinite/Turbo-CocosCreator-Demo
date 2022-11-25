@@ -14,7 +14,7 @@ export function getMiniGamePlatform() {
   var t = cc.sys.platform,
     e =
       cc.sys?.WECHAT_GAME ||
-      (cc.sys?.Platform ? cc.sys.Platform?.WECHAT_GAME : "")
+      (cc.sys?.Platform ? cc.sys.Platform?.WECHAT_GAME : "");
   return t === e ? "WECHAT_GAME" : "DEFAULT";
 }
 
@@ -40,6 +40,8 @@ export function getPlatForm() {
     query.advertiser_id
   ) {
     return "bytedance";
+  } else if (query.gdt_vid) {
+    return "tencent";
   } else {
     return "";
   }
