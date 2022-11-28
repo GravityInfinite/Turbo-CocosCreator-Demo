@@ -94,9 +94,12 @@ turbo._store = {
     if (!info) {
       turbo._is_first_launch = true;
       cc.sys.localStorage.setItem(turbo._para.storage_store_key, "1");
-
+      const commonProps = eventProperty.getProperties();
       turbo.profileSetOnce({
         $first_visit_time: dateFormate(new Date(), true),
+        $os: commonProps.$os,
+        $brand: commonProps.$brand,
+        $model: commonProps.$model,
       });
     }
   },
