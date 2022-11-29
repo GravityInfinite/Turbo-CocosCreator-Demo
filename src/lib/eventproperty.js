@@ -41,6 +41,7 @@ export const eventProperty = {
         $brand: String(info.brand).toLocaleUpperCase(),
         $manufacturer: info.brand,
         $lib_version: "3.2.9",
+        $lib: "CocosCreator",
       };
       for (let item in temp_systeminfo) {
         if (temp_systeminfo.hasOwnProperty(item)) {
