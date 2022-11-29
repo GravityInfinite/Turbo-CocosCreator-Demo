@@ -68,9 +68,6 @@ export const register = function (e = {}) {
     if (turbo._miniGamePlatform === "DEFAULT") {
       xhrPromise(url, data, "POST")
         .then((res) => {
-          turbo.profileSetOnce({
-            $signup_time: dateFormate(new Date(), true),
-          });
           resolve(res);
         })
         .catch((err) => {
@@ -85,9 +82,6 @@ export const register = function (e = {}) {
       data,
       success(res) {
         if (res.statusCode === 200) {
-          turbo.profileSetOnce({
-            $signup_time: dateFormate(new Date(), true),
-          });
           resolve(res.data);
           return;
         }
