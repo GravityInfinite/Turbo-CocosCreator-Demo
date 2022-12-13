@@ -59,6 +59,15 @@ export const register = function (e = {}) {
       creative_id: query?.creative_id || "",
       advertiser_id: query?.advertiser_id || "",
       request_id: query?.request_id || "",
+      req_id: query?.req_id || "",
+      // v2.0
+      project_id: query?.project_id || "",
+      promotion_id: query?.promotion_id || "",
+      mid1: query?.mid1 || "",
+      mid2: query?.mid2 || "",
+      mid3: query?.mid3 || "",
+      mid4: query?.mid4 || "",
+      mid5: query?.mid5 || "",
     };
   } else if (platform === "tencent") {
     data.ad_data = { gdt_vid: query?.gdt_vid || "" };
