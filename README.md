@@ -132,6 +132,8 @@ turbo.logoutEvent();
     amount:                           原价金额,单位为分
     real_amount:                      实际付款金额,单位为分
  * @param {number} timestamp  事件发生时间 毫秒时间戳
+ * @param {boolean} use_client_time  是否使用上报的timestamp作为回传时间，默认为false，当为true时，timestamp必填
+ * @param {string} trace_id  本次事件的唯一id（重复上报会根据该id去重，trace_id的长度不能超过128），可填入订单id，请求id等唯一值。如果为空，turbo则会自动生成一个。
  */
 
 turbo
@@ -142,6 +144,8 @@ turbo
       real_amount: 180,
     },
     timestamp: 1663227655000,
+    use_client_time: true,
+    trace_id: "your_trace_id",
   })
   .then(() => {
 

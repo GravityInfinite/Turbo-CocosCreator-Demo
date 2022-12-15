@@ -41,6 +41,8 @@ export class Demo extends Component {
           real_amount: 200,
         },
         timestamp: 1000,
+        use_client_time: true,
+        trace_id: "your_trace_id",
       })
       .then((res) => {
         console.log(res);

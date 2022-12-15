@@ -108,13 +108,20 @@ export const handleEvent = function (e = {}) {
     throw new Error("event_type must be required");
   }
   const data = {
-    event_type: e?.event_type || "",
+    event_type: e.event_type || "",
   };
   if (e?.properties) {
     data.properties = e.properties;
   }
+  data.use_client_time = e?.use_client_time || false;
+  if (data.use_client_time && !e?.timestamp) {
+    throw new Error("timestamp must be required");
+  }
   if (e?.timestamp) {
     data.timestamp = e.timestamp;
+  }
+  if (e?.trace_id) {
+    data.trace_id = e.trace_id;
   }
   return new Promise(function (resolve, reject) {
     const url = `${baseurl}/event/handle_event/?access_token=${turbo._globalData.access_token}&client_id=${turbo._globalData.client_id}`;
