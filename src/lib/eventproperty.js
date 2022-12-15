@@ -21,13 +21,21 @@ export const eventProperty = {
   // getNetworkType非同步，不返回值
   getNetworkType: function () {
     const _this = this;
-    if (turbo.platform_obj?.getNetworkType) {
-      turbo.platform_obj.getNetworkType({
-        success: function (res) {
-          _this.properties.$network_type = res.networkType;
-        },
-      });
-    }
+    return new Promise(function (resolve, reject) {
+      if (turbo.platform_obj?.getNetworkType) {
+        turbo.platform_obj.getNetworkType({
+          success: function (res) {
+            _this.properties.$network_type = res.networkType;
+            resolve(res);
+          },
+          fail: function (err) {
+            reject(err);
+          },
+        });
+      } else {
+        resolve({ networkType: undefined });
+      }
+    });
   },
   getSystemInfoSync: function () {
     if (turbo.platform_obj?.getSystemInfoSync) {

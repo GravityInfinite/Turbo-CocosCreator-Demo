@@ -10,11 +10,11 @@
   },
   "BuildTaskManager": {
     "taskMap": {
-      "1671077114066": {
-        "id": "1671077114066",
+      "1671088153875": {
+        "id": "1671088153875",
         "progress": 1,
         "state": "success",
-        "message": "2022-12-15 12:05 Build success in 9326 ms!",
+        "message": "2022-12-15 15:09 Build success in 18191 ms!",
         "options": {
           "name": "NewProject",
           "platform": "wechatgame",
@@ -54,7 +54,7 @@
             }
           }
         },
-        "time": "2022-12-15 12:05",
+        "time": "2022-12-15 15:09",
         "dirty": false
       }
     }

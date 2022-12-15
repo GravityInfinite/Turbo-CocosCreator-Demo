@@ -154,7 +154,7 @@ function initWechatGameAppProxy() {
   }
 }
 
-function checkAppLaunch() {
+async function checkAppLaunch() {
   if (!turbo._meta.life_state.app_launched) {
     let option = {};
     if (turbo._miniGamePlatform === "WECHAT_GAME") {
@@ -167,10 +167,12 @@ function checkAppLaunch() {
     //   query: option?.query || {},
     //   scene: option.scene || "",
     // });
+    const res = await eventProperty.getNetworkType();
     sendOnce({
       type: "track",
       event: "$MPLaunch",
       properties: {
+        $network_type: res?.networkType,
         $is_first_time: turbo._is_first_launch,
         $url_query: setQuery(option?.query || {}),
         $scene: String(option.scene || ""),

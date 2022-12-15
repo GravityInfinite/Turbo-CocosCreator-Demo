@@ -5291,3 +5291,171 @@ at async buildEngine (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\r
 at async Object.buildEngineX (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\engine.ccc:1:1344)  
 at async C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\index.ccc:1:1213  
 at async BuildTask.handle (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\index.ccc:1:585)
+2022-12-15T04:04:46.312Z - warn: [Scene] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. Error: [Scene] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. 
+    at warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:145646:10)
+    at replacePropertyLog (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160045:5)
+    at Object.get (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160110:11)
+    at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/fb/fb10e3fe859a8c97fed23175ceec21aed788cee2.js:592:93
+    at Array.<anonymous> (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/fb/fb10e3fe859a8c97fed23175ceec21aed788cee2.js:424:62)
+    at n (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/fb/fb10e3fe859a8c97fed23175ceec21aed788cee2.js:811:22)
+    at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/fb/fb10e3fe859a8c97fed23175ceec21aed788cee2.js:812:10
+2022-12-15T04:05:14.167Z - warn: [Build] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. [Build] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead.   
+at NewConsole.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\console.ccc:1:1286)  
+at warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:145646:10)  
+at replacePropertyLog (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160045:5)  
+at Object.get (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160110:11)  
+at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/fb/fb10e3fe859a8c97fed23175ceec21aed788cee2.js:592:93  
+at Array.<anonymous> (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/fb/fb10e3fe859a8c97fed23175ceec21aed788cee2.js:424:62)
+2022-12-15T04:05:21.579Z - warn: [Build] Unexpected: entry chunk name turbo.min.mjs_cjs=&original= is not in list.[Build] Unexpected: entry chunk name turbo.min.mjs_cjs=&original= is not in list.  
+at NewConsole.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\console.ccc:1:1286)  
+at buildScript (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\project-scripts.ccc:1:6308)  
+at runMicrotasks (<anonymous>)  
+at processTicksAndRejections (internal/process/task_queues.js:93:5)  
+at async Object.buildProjectScriptsX (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\project-scripts.ccc:1:1957)  
+at async C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\index.ccc:1:863
+2022-12-15T04:13:02.448Z - warn: Metrics: no valid info
+2022-12-15T07:08:38.741Z - log: [Package] menu@1.0.0 enable
+2022-12-15T07:08:38.744Z - log: [Package] profile@1.0.0 enable
+2022-12-15T07:08:38.759Z - log: [Package] project@1.0.2 enable
+2022-12-15T07:08:38.764Z - log: [Package] messages@1.0.0 enable
+2022-12-15T07:08:38.778Z - log: [Package] program@1.0.0 enable
+2022-12-15T07:08:38.784Z - log: [Package] tester@1.0.0 enable
+2022-12-15T07:08:38.790Z - log: [Package] preferences@1.0.0 enable
+2022-12-15T07:08:39.716Z - log: Setup mods mgr.: 556.504ms
+2022-12-15T07:08:39.727Z - log: Profile changed: engine (modules.includeModules: 2d,animation,audio,base,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,marionette,particle-2d,physics-2d-box2d,profiler,skeletal-animation,spine,tiled-map,tween,ui,video,webview)
+2022-12-15T07:08:39.735Z - verbose: [Engine] QuickCompile engine (892ms)
+2022-12-15T07:08:39.738Z - log: [Package] engine@1.0.6 enable
+2022-12-15T07:08:40.624Z - log: [Package] programming@1.0.0 enable
+2022-12-15T07:08:41.100Z - log: [Package] device@1.0.1 enable
+2022-12-15T07:08:41.135Z - log: [Package] ui-kit@1.0.1 enable
+2022-12-15T07:08:41.163Z - log: [Package] engine-extends@1.0.0 enable
+2022-12-15T07:08:41.229Z - log: [Package] asset-db@1.0.0 enable
+2022-12-15T07:08:41.266Z - log: [Package] scene@1.0.0 enable
+2022-12-15T07:08:41.441Z - log: [Package] server@1.0.0 enable
+2022-12-15T07:08:41.515Z - log: [Package] utils@1.0.0 enable
+2022-12-15T07:08:45.163Z - log: [Package] preview@1.0.1 enable
+2022-12-15T07:08:45.202Z - log: [Package] animator@1.0.0 enable
+2022-12-15T07:08:46.392Z - log: [Package] builder@1.3.2 enable
+2022-12-15T07:08:46.424Z - log: [Package] shortcuts@1.0.1 enable
+2022-12-15T07:08:46.457Z - log: [Package] animation-graph@1.0.0 enable
+2022-12-15T07:08:46.480Z - log: [Package] runtime-dev-tools@1.0.0 enable
+2022-12-15T07:08:46.502Z - log: [Package] channel-upload-tools@1.0.0 enable
+2022-12-15T07:08:46.536Z - log: [Package] about@1.0.0 enable
+2022-12-15T07:08:46.581Z - log: [Package] assets@1.0.0 enable
+2022-12-15T07:08:46.627Z - log: [Package] console@1.0.0 enable
+2022-12-15T07:08:46.838Z - log: [Package] extension@3.0.16 enable
+2022-12-15T07:08:46.877Z - log: [Package] hierarchy@1.0.0 enable
+2022-12-15T07:08:46.924Z - log: [Package] inspector@1.0.0 enable
+2022-12-15T07:08:46.958Z - log: [Package] lightmap@1.0.4 enable
+2022-12-15T07:08:47.019Z - log: [Package] node-library@1.0.1 enable
+2022-12-15T07:08:47.042Z - log: [Package] package-asset@1.0.0 enable
+2022-12-15T07:08:47.073Z - log: [Package] process@1.0.0 enable
+2022-12-15T07:08:47.110Z - log: [Package] reference-image@1.0.0 enable
+2022-12-15T07:08:47.148Z - log: [Package] alipay-mini-game@1.0.0 enable
+2022-12-15T07:08:47.181Z - log: [Package] android@1.0.0 enable
+2022-12-15T07:08:47.211Z - log: [Package] baidu-mini-game@1.0.0 enable
+2022-12-15T07:08:47.242Z - log: [Package] bytedance-mini-game@1.0.1 enable
+2022-12-15T07:08:47.273Z - log: [Package] cocos-play@1.0.0 enable
+2022-12-15T07:08:47.306Z - log: [Package] huawei-agc@1.0.0 enable
+2022-12-15T07:08:47.337Z - log: [Package] huawei-quick-game@1.0.0 enable
+2022-12-15T07:08:47.370Z - log: [Package] ios@1.0.0 enable
+2022-12-15T07:08:47.397Z - log: [Package] ios-app-clip@1.0.0 enable
+2022-12-15T07:08:47.430Z - log: [Package] link-sure@1.0.0 enable
+2022-12-15T07:08:47.461Z - log: [Package] linux@1.0.0 enable
+2022-12-15T07:08:47.491Z - log: [Package] mac@1.0.0 enable
+2022-12-15T07:08:47.606Z - log: [Package] native@1.0.0 enable
+2022-12-15T07:08:47.633Z - log: [Package] ohos@1.0.0 enable
+2022-12-15T07:08:47.664Z - log: [Package] open-harmonyos@1.0.0 enable
+2022-12-15T07:08:47.696Z - log: [Package] oppo-mini-game@1.0.0 enable
+2022-12-15T07:08:47.727Z - log: [Package] qtt@1.0.0 enable
+2022-12-15T07:08:47.758Z - log: [Package] vivo-mini-game@1.0.0 enable
+2022-12-15T07:08:47.804Z - log: [Package] web-desktop@1.0.0 enable
+2022-12-15T07:08:47.848Z - log: [Package] web-mobile@1.0.0 enable
+2022-12-15T07:08:47.895Z - log: [Package] wechatgame@1.0.1 enable
+2022-12-15T07:08:47.931Z - log: [Package] windows@1.0.0 enable
+2022-12-15T07:08:47.961Z - log: [Package] xiaomi-quick-game@1.0.0 enable
+2022-12-15T07:08:48.247Z - log: [Package] cocos-service@3.0.3 enable
+2022-12-15T07:08:48.289Z - log: [Package] importer@1.0.0 enable
+2022-12-15T07:08:48.582Z - log: [Im-plugin] Check im-plugin version.
+2022-12-15T07:08:48.593Z - log: [Package] im-plugin@3.0.8 enable
+2022-12-15T07:08:48.745Z - verbose: [AssetDB] Require engine code (2886ms)
+2022-12-15T07:08:50.547Z - log: [Im-plugin] No online info of im-plugin.
+2022-12-15T07:08:54.359Z - warn: [Programming] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating[Programming] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating  
+at Logger.record (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:458)  
+at console.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:1260)  
+at Object.oldDataWarning (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@cocos\creator-programming-mod-lo\node_modules\browserslist\node.js:381:15)  
+at browserslist (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@cocos\creator-programming-mod-lo\node_modules\browserslist\index.js:439:7)  
+at resolveTargets (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@cocos\creator-programming-mod-lo\node_modules\@babel\helper-compilation-targets\lib\index.js:168:20)  
+at getTargets (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@cocos\creator-programming-mod-lo\node_modules\@babel\helper-compilation-targets\lib\index.js:213:27)  
+at getLocalTargets (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@cocos\creator-programming-mod-lo\node_modules\@babel\preset-env\lib\index.js:227:48)  
+at C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@cocos\creator-programming-mod-lo\node_modules\@babel\preset-env\lib\index.js:288:15
+2022-12-15T07:08:55.837Z - verbose: [Scene] Require engine code (1ms)
+2022-12-15T07:08:55.838Z - verbose: [Scene] Startup engine (0ms)
+2022-12-15T07:08:55.888Z - log: [Scene] Cocos Creator v3.5.0
+2022-12-15T07:08:55.955Z - warn: [Scene] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. Error: [Scene] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. 
+    at warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:145646:10)
+    at replacePropertyLog (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160045:5)
+    at Object.get (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160110:11)
+    at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:1015:93
+    at Array.<anonymous> (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:847:62)
+    at n (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:1241:22)
+    at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:1242:10
+2022-12-15T07:08:56.371Z - verbose: [Scene] Open engine (533ms)
+2022-12-15T07:08:56.371Z - verbose: [Scene] Configure engine (0ms)
+2022-12-15T07:08:55.972Z - info: [Scene] Forward render pipeline initialized.
+2022-12-15T07:08:57.162Z - warn: [Scene] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. Error: [Scene] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. 
+    at warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:145646:10)
+    at replacePropertyLog (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160045:5)
+    at Object.get (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160110:11)
+    at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:1015:93
+    at Array.<anonymous> (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:847:62)
+    at n (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:1241:22)
+    at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:1242:10
+2022-12-15T07:09:16.094Z - warn: [Build] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead. [Build] 'sys.WECHAT_GAME' is deprecated, please use 'sys.Platform.WECHAT_GAME' instead.   
+at NewConsole.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\console.ccc:1:1286)  
+at warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:145646:10)  
+at replacePropertyLog (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160045:5)  
+at Object.get (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:160110:11)  
+at file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:1015:93  
+at Array.<anonymous> (file:///C:/Users/MrOrange/Desktop/turboSDK/turbo-cocos-creator/cocoscreatorv3.5.0-demo/temp/programming/packer-driver/targets/editor/chunks/00/0092fdcd13df7d5f08b2c625f3696c31dc6334e8.js:847:62)
+2022-12-15T07:09:16.206Z - warn: [Build] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db[Build] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db  
+at Object.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:1260)  
+at NewConsole.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\console.ccc:1:1286)  
+at Object.oldDataWarning (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\browserslist\node.js:351:15)  
+at browserslist (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\browserslist\index.js:431:7)  
+at C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\core-js-compat\targets-parser.js:39:18  
+at C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\core-js-compat\compat.js:28:25  
+at Object.default (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\core-js-builder\index.js:35:26)
+2022-12-15T07:09:16.889Z - warn: [Build] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating[Build] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating  
+at Object.encode (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@base\electron-worker\node_modules\v-stacks\index.js:14:17)  
+at Logger._logHandler (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@base\electron-worker\static\script.ccc:1:531)  
+at Logger.record (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:458)  
+at Object.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@base\electron-logger\lib\renderer.ccc:1:1260)  
+at NewConsole.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\console.ccc:1:1286)  
+at Object.oldDataWarning (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@babel\helper-compilation-targets\node_modules\browserslist\node.js:373:15)  
+at browserslist (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@babel\helper-compilation-targets\node_modules\browserslist\index.js:432:7)  
+at resolveTargets (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@babel\helper-compilation-targets\lib\index.js:174:20)  
+at getTargets (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@babel\helper-compilation-targets\lib\index.js:214:27)  
+at resolveTargets (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\node_modules\@babel\core\lib\config\resolve-targets.js:58:50)
+2022-12-15T07:09:27.501Z - warn: [Build] Unexpected: entry chunk name turbo.min.mjs_cjs=&original= is not in list.[Build] Unexpected: entry chunk name turbo.min.mjs_cjs=&original= is not in list.  
+at NewConsole.warn (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\console.ccc:1:1286)  
+at buildScript (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\project-scripts.ccc:1:6308)  
+at processTicksAndRejections (internal/process/task_queues.js:93:5)  
+at async Object.buildProjectScriptsX (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\project-scripts.ccc:1:1957)  
+at async C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\index.ccc:1:863  
+at async BuildTask.handle (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.5.0\resources\app.asar\builtin\builder\dist\worker\builder\build-task\script\index.ccc:1:585)
+2022-12-15T07:09:40.117Z - warn: Metrics: no valid info
