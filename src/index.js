@@ -272,8 +272,11 @@ const sendStrategy = {
         method: "POST",
         header,
         data: parmas,
-        success: function () {
-          resolve("");
+        success: function (res) {
+          resolve({
+            ...res,
+            count: parmas.event_list.length,
+          });
         },
         fail: function () {
           reject("");
@@ -293,8 +296,14 @@ const sendStrategy = {
       stack.push(this.requestAll(params));
     }
     Promise.all(stack)
-      .then(() => {
-        option.success(option.len);
+      .then((res) => {
+        for (let i = 0; i < res.length; i++) {
+          if (res[i].data.code === 2000) {
+            option.success(0);
+          } else {
+            option.success(res[i].count);
+          }
+        }
       })
       .catch(() => {
         option.fail();
