@@ -1,6 +1,6 @@
-# CocosCreator接入
+# CocosCreator 接入
 
-本文档为CocosCreator接入 [turbo 引力引擎](https://gravity-engine.com/)的技术接入方案，具体 Demo 请参考[GitHub](https://github.com/GravityInfinite/Turbo-CocosCreator-Demo)。
+本文档为 CocosCreator 接入 [turbo 引力引擎](https://gravity-engine.com/)的技术接入方案，具体 Demo 请参考[GitHub](https://github.com/GravityInfinite/Turbo-CocosCreator-Demo)。
 
 注：目前仅支持微信小游戏平台。
 
@@ -14,7 +14,7 @@
 
 #### 1.1 导入 SDK
 
-- 从[GitHub](https://github.com/GravityInfinite/Turbo-CocosCreator-Demo/releases)上获取CocosCreator SDK 源码；
+- 从[GitHub](https://github.com/GravityInfinite/Turbo-CocosCreator-Demo/releases)上获取 CocosCreator SDK 源码；
 - 将 `turbo.min.js`文件放入小游戏项目中；
 
 ```javascript
@@ -147,9 +147,7 @@ turbo
     use_client_time: false, // 可选
     trace_id: "your_trace_id", // 可选
   })
-  .then(() => {
-
-  });
+  .then(() => {});
 ```
 
 #### 2.6 查询用户信息
@@ -196,9 +194,7 @@ turbo
       },
     ]
  */
-turbo.queryUser().then((data) => {
-
-});
+turbo.queryUser().then((data) => {});
 ```
 
 #### 2.7 设置事件公共属性
