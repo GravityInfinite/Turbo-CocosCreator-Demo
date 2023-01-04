@@ -4,7 +4,7 @@
   "description": "turbo minigame sdk",
   "main": "turbo.min.js",
   "scripts": {
-    "build": "webpack --config ./webpack.config.js"
+    "build": "webpack --config ./webpack.config.js && cp ./dist/turbo.min.js ./cocoscreatorv3.5.0-demo/assets/Scripts/turbo.min.js"
   },
   "keywords": [
     "turbo",
