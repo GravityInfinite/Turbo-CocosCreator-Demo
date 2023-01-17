@@ -72,6 +72,9 @@ export const register = function (e = {}) {
   } else if (platform === "tencent") {
     data.ad_data = { gdt_vid: query?.gdt_vid || "" };
   }
+  if (query?.turbo_promoted_object_id) {
+    data.promoted_object_id = query.turbo_promoted_object_id;
+  }
   return new Promise(function (resolve, reject) {
     const url = `${baseurl}/user/register/?access_token=${turbo._globalData.access_token}`;
     if (turbo._miniGamePlatform === "DEFAULT") {

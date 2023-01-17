@@ -8,7 +8,6 @@ export const autoTrackCustom = {
       return;
     }
     turbo.track("$MPLaunch", {
-      $is_first_time: turbo._is_first_launch,
       $url_query: setQuery(option.query),
       $scene: String(option.scene),
     });
@@ -19,7 +18,16 @@ export const autoTrackCustom = {
     if (!turbo?._para?.autoTrack?.appShow) {
       return;
     }
+    let $url_path = undefined;
+    try {
+      if (location?.pathname) {
+        $url_path = location.pathname;
+      }
+    } catch (e) {
+      $url_path = undefined;
+    }
     turbo.track("$MPShow", {
+      $url_path,
       $url_query: setQuery(option.query),
       $scene: String(option.scene),
     });
@@ -27,6 +35,14 @@ export const autoTrackCustom = {
   appHide: function () {
     if (!turbo?._para?.autoTrack?.appHide) {
       return;
+    }
+    let $url_path = undefined;
+    try {
+      if (location?.pathname) {
+        $url_path = location.pathname;
+      }
+    } catch (e) {
+      $url_path = undefined;
     }
     let event_duration = null;
     const current_time = new Date().getTime();
@@ -38,7 +54,8 @@ export const autoTrackCustom = {
       event_duration = current_time - mpshow_time;
     }
     turbo.track("$MPHide", {
-      $event_duration: event_duration,
+      $url_path,
+      $event_duration: event_duration / 1000,
     });
   },
 };
