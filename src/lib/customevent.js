@@ -71,6 +71,8 @@ export const register = function (e = {}) {
     };
   } else if (platform === "tencent") {
     data.ad_data = { gdt_vid: query?.gdt_vid || "" };
+  } else if (platform === "baidu") {
+    data.ad_data = { bd_vid: query?.bd_vid || "" };
   }
   if (query?.turbo_promoted_object_id) {
     data.promoted_object_id = query.turbo_promoted_object_id;

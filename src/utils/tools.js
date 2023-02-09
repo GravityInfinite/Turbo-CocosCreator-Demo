@@ -42,6 +42,8 @@ export function getPlatForm() {
     return "bytedance";
   } else if (query.gdt_vid) {
     return "tencent";
+  } else if (query.bd_vid) {
+    return "baidu";
   } else {
     return "";
   }
